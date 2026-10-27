@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lavanya Bhatnagar Dental Clinic | Civil Lines, Nayapura, Kota</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tealBrand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            700: '#0d5c75',
+                            800: '#084c61', // Deep Medical Teal
+                            900: '#053443',
+                        },
+                        mintAccent: {
+                            400: '#34d399',
+                            500: '#10b981', // Vibrant Mint Accent
+                            600: '#059669',
+                        },
+                        goldAccent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b', // Rich Gold / Warm Ochre
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8fafc;
+        }
+
+        .bg-hero-light {
+            background: radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                        linear-gradient(135deg, #ffffff 0%, #f0fdfa 50%, #e6f4f8 100%);
+        }
+
+        .glass-panel-light {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(13, 92, 117, 0.12);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(8, 76, 97, 0.08);
+        }
+
+        @keyframes pulse-emerald {
+            0%, 100% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.7); }
+        }
+        .btn-glow {
+            animation: pulse-emerald 3s infinite;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #0d5c75; border-radius: 4px; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-mintAccent-500 selection:text-white pb-16 md:pb-0">
+
+    <!-- Emergency Hotline Banner -->
+    <div class="bg-gradient-to-r from-tealBrand-800 via-tealBrand-700 to-tealBrand-800 text-white text-xs md:text-sm py-2 px-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-center md:text-left">
+                <span class="bg-goldAccent-500 text-slate-950 font-black px-2.5 py-0.5 rounded text-[11px] uppercase tracking-wider">Top Rated Clinic</span>
+                <span class="font-medium">Emergency Dental Care & Consultation • Civil Lines, Nayapura, Kota</span>
+            </div>
+            <div class="flex items-center gap-4 shrink-0">
+                <a href="tel:08890251088" class="hover:underline flex items-center gap-1.5 font-bold text-amber-300">
+                    <i class="fa-solid fa-phone-volume animate-bounce"></i> Call: +91 88902 51088
+                </a>
+                <a href="https://wa.me/918890251088?text=Hello%20Dr.%20Lavanya%20Bhatnagar%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="bg-mintAccent-500 hover:bg-mintAccent-600 text-white font-bold px-3 py-0.5 rounded-full text-xs flex items-center gap-1 shadow transition-transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-9 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-tealBrand-800 to-mintAccent-500 rounded-2xl flex items-center justify-center text-white shadow-md shadow-tealBrand-800/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl group-hover:rotate-12 transition-transform"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-black tracking-tight text-tealBrand-900 block leading-tight">Dr. Lavanya Bhatnagar</span>
+                        <span class="text-xs font-bold tracking-widest text-tealBrand-700 uppercase">Dental Clinic • Nayapura, Kota</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <nav class="hidden lg:flex items-center gap-7">
+                    <a href="#about" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">About Dr. Lavanya</a>
+                    <a href="#services" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">Services</a>
+                    <a href="#transformations" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">Smile Gallery</a>
+                    <a href="#calculator" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">Cost Estimator</a>
+                    <a href="#reviews" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">Reviews</a>
+                    <a href="#contact" class="text-slate-700 hover:text-tealBrand-700 font-semibold transition-colors">Contact Us</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:08890251088" class="hidden sm:flex items-center gap-2 border border-tealBrand-700 text-tealBrand-800 hover:bg-tealBrand-50 px-4 py-2.5 rounded-xl font-bold text-sm transition-all">
+                        <i class="fa-solid fa-phone text-xs"></i>
+                        <span>+91 88902 51088</span>
+                    </a>
+                    <button onclick="openBookingModal()" class="btn-glow bg-gradient-to-r from-mintAccent-500 to-tealBrand-700 hover:from-mintAccent-600 hover:to-tealBrand-800 text-white px-5 py-2.5 rounded-xl font-black text-sm shadow-md transition-all hover:scale-105 flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-base"></i>
+                        <span>Book Appointment</span>
+                    </button>
+                    
+                    <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">About Dr. Lavanya</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">Services</a>
+            <a href="#transformations" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">Smile Gallery</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">Cost Estimator</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">Reviews</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-tealBrand-50 hover:text-tealBrand-800">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden bg-hero-light py-12 lg:py-20 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Badges Row -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3">
+                        <span class="bg-goldAccent-500/10 border border-goldAccent-500/30 text-goldAccent-600 font-extrabold px-3.5 py-1.5 rounded-full text-xs sm:text-sm flex items-center gap-1.5 shadow-sm">
+                            <i class="fa-solid fa-star text-goldAccent-500"></i> 4.9★ Google Rating (80+ Reviews)
+                        </span>
+                        <span class="bg-tealBrand-100 border border-tealBrand-500/20 text-tealBrand-800 font-semibold px-3.5 py-1.5 rounded-full text-xs sm:text-sm flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot text-mintAccent-600"></i> Civil Lines, Nayapura, Kota
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-tealBrand-900 tracking-tight leading-tight">
+                        Gentle, Advanced & <br>
+                        <span class="bg-gradient-to-r from-tealBrand-800 via-tealBrand-700 to-mintAccent-600 bg-clip-text text-transparent">Painless Dental Care</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Experience compassionate, world-class dental treatments with state-of-the-art diagnostic tools, single-sitting procedures, and 100% sterile hospital-grade protocols.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openBookingModal()" class="w-full sm:w-auto bg-gradient-to-r from-mintAccent-500 to-tealBrand-700 hover:from-mintAccent-600 hover:to-tealBrand-800 text-white font-black px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3 text-base">
+                            <i class="fa-solid fa-calendar-check text-xl"></i>
+                            <span>Book Instant Appointment</span>
+                        </button>
+                        <a href="tel:08890251088" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-tealBrand-800 border-2 border-tealBrand-800 font-bold px-7 py-3.5 rounded-xl transition-all duration-300 flex items-center justify-center gap-2.5 text-base shadow-sm">
+                            <i class="fa-solid fa-phone text-tealBrand-700"></i>
+                            <span>Call: +91 88902 51088</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Indicators -->
+                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 border-t border-slate-200 max-w-xl mx-auto lg:mx-0 text-left">
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i class="fa-solid fa-circle-check text-mintAccent-500"></i> Single-Sitting RCT
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i class="fa-solid fa-circle-check text-mintAccent-500"></i> Ultrasonic Cleaning
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700">
+                            <i class="fa-solid fa-circle-check text-mintAccent-500"></i> 100% Sterile Setup
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Hero Image Showcase & Quick Booking Form -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="bg-white rounded-3xl p-6 shadow-2xl border border-slate-200 relative z-10">
+                            <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
+                                <div>
+                                    <h3 class="text-lg font-black text-tealBrand-900">Quick Appointment</h3>
+                                    <p class="text-xs text-slate-500">Directly with Dr. Lavanya Bhatnagar</p>
+                                </div>
+                                <span class="bg-mintAccent-500/10 text-mintAccent-600 text-xs font-bold px-3 py-1 rounded-full">Fast Priority</span>
+                            </div>
+                            
+                            <form onsubmit="handleHeroBookingSubmit(event)" class="space-y-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-600 mb-1">Your Full Name</label>
+                                    <input type="text" required id="heroName" placeholder="e.g. Rahul Sharma" class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl p-3 text-sm focus:ring-2 focus:ring-tealBrand-700 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-600 mb-1">Phone Number</label>
+                                    <input type="tel" required id="heroPhone" placeholder="10-digit mobile number" class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl p-3 text-sm focus:ring-2 focus:ring-tealBrand-700 focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-600 mb-1">Select Treatment</label>
+                                    <select id="heroService" class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl p-3 text-sm focus:ring-2 focus:ring-tealBrand-700 focus:outline-none">
+                                        <option value="Consultation">General Dental Checkup</option>
+                                        <option value="RCT">Root Canal Treatment (RCT)</option>
+                                        <option value="Whitening">Teeth Whitening</option>
+                                        <option value="Braces">Braces & Invisible Aligners</option>
+                                        <option value="Implants">Dental Implants</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="w-full bg-tealBrand-800 hover:bg-tealBrand-900 text-white font-black py-3.5 rounded-xl text-sm transition-all shadow-md mt-2 flex items-center justify-center gap-2">
+                                    <span>Request Consultation Call</span>
+                                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                                </button>
+                            </form>
+                            <div id="heroFormSuccess" class="hidden text-center py-4 text-emerald-600 text-xs font-bold">
+                                <i class="fa-solid fa-circle-check text-lg block mb-1"></i> Request Submitted! We will call you shortly.
+                            </div>
+                        </div>
+
+                        <!-- Accent background glow -->
+                        <div class="absolute -inset-2 bg-gradient-to-r from-mintAccent-500 to-tealBrand-700 rounded-3xl blur-xl opacity-20 -z-0"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Dr. Profile Section -->
+    <section id="about" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-slate-100 relative">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Dr Lavanya Bhatnagar Dental Clinic Interior" class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-tealBrand-900/80 via-transparent to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <span class="bg-goldAccent-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full uppercase">Kota Verified Practice</span>
+                                <h3 class="text-xl font-bold mt-2">Modern Clinical Setup</h3>
+                                <p class="text-xs text-slate-200">Civil Lines, Nayapura, Kota</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="bg-tealBrand-50 text-tealBrand-800 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full border border-tealBrand-100">About the Doctor & Clinic</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-tealBrand-900">Dedicated to Painless, Precision Dental Excellence</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        At <strong>Dr. Lavanya Bhatnagar Dental Clinic</strong>, we blend clinical expertise with gentle, empathetic patient care. Our clinic in Nayapura, Kota is equipped with modern diagnostic facilities, ensuring comfortable treatments for patients of all ages.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-tealBrand-800 text-white rounded-xl flex items-center justify-center font-bold mb-3">
+                                <i class="fa-solid fa-hand-holding-medical"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-800">Painless Dentistry</h4>
+                            <p class="text-xs text-slate-600 mt-1">Advanced local techniques minimizing discomfort during all major procedures.</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-mintAccent-500 text-white rounded-xl flex items-center justify-center font-bold mb-3">
+                                <i class="fa-solid fa-pump-soap"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-800">Hospital-Grade Hygiene</h4>
+                            <p class="text-xs text-slate-600 mt-1">Strict multi-tier autoclaving and single-use sterile dental kits.</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-goldAccent-500 text-white rounded-xl flex items-center justify-center font-bold mb-3">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-800">Single-Sitting RCT</h4>
+                            <p class="text-xs text-slate-600 mt-1">Time-saving endodontic procedures using digital apex locators.</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-
